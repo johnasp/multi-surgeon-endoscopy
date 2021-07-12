@@ -1,0 +1,41 @@
+.scope-main__menu {
+   display: flex;
+   justify-content: center;
+   button {
+      background: $button-bg;
+      border: none;
+      color: #fff;
+      padding: 1.2rem;
+      min-width: 10rem;
+      font-weight: 400;
+      &:hover {
+         background: $button-hover;
+      }
+      @extend .flex-center; 
+      i {
+         color: #0cf7ff;
+         font-size: 1.8rem;
+         margin: 0.6rem 0;
+         &.live {
+            color: $col-warning;
+         }
+         &.fa-circle {
+            color: red;
+            animation: blinkingText 1.6s infinite;
+         }
+      }
+   }
+}
+.scope-record-timer {
+   position: absolute;
+   top: 0;
+   padding: 0.3rem 0.6rem;
+   display: none;
+   background: rgba(10, 10, 10, 0.349);
+   i {
+      margin-right: 0.3rem;
+   }
+   &.show {
+      display: block;
+   }
+}

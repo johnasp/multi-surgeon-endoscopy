@@ -1,0 +1,40 @@
+
+:root {
+  font-size: 62.5%;
+}
+html {
+  font-size: 62.5%;
+}
+body, html {
+  height: 100vh;
+  font-family: sans-serif;
+}
+html {
+  background:#004f58;
+  box-sizing: border-box;
+}
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+a, button {
+  cursor: pointer;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  color: $col-dark-grey;
+  letter-spacing: 0.05rem;
+}

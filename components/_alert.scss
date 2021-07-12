@@ -1,0 +1,134 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ALERT component.
+// -----------------------------------------------------------------------------
+.alert {
+   position: absolute;
+   @include gradientOutline();
+   @include boxShadow();
+   padding: 0.1rem;
+   border-radius: $corners;
+   color: #fff;
+   opacity: 0;
+   @include animate(0.5s);
+   bottom: $gutter/2;
+   z-index: 99;
+   &.show {
+      opacity: 1;
+   }
+   i.fa-times {
+      position: absolute;
+      top: $gutter;
+      right: $gutter;
+      font-size: 2.4rem;
+      cursor: pointer;
+      height: 4.2rem;
+      width: 4.2rem;
+      display: flex!important;
+      align-items: center;
+      justify-content: center; 
+      &:hover {
+         @include circleBgHover(0.5); //parameter is opacity value
+      }
+   }
+   .alert-body {
+      padding: $gutter*2;
+      background: $button-bg;
+      border-radius: $corners;
+      text-align: center;
+      height: 100%;
+   }
+   .btn {
+      margin-top: $gutter;
+   }
+}
+.alert__dialog {
+   max-width: 36rem;
+   left: -50rem;
+   &.show {
+      left: $gutter/2;
+   }
+}
+.alert__dialog__complete {
+   min-width: 57rem;
+   .alert-body {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+   }
+   &.show {
+      left: $gutter/2;
+    }
+}
+
+.alert__annotation-colour {
+   .alert__annotation-colour__palette {
+      font-size: 1rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.2rem;
+      a {
+         width: 4rem;
+         height: 4rem;
+         background: #fff;
+         display: inline-block;
+         border-radius: 0.3rem;
+         transition: transform 0.2s ease-in-out;
+         &:hover {
+           cursor: pointer;
+           transform: scale(1.15);
+         }
+      }
+      .alert__annotation-colour--red {
+         background:red;
+      }
+      .alert__annotation-colour--green {
+         background: green;
+      }
+      .alert__annotation-colour--blue {
+         background: rgb(29, 132, 250);
+      }
+      .alert__annotation-colour--pink {
+         background: pink;
+      }
+      .alert__annotation-colour--yellow {
+         background: yellow;
+      }
+      .alert__annotation-colour--orange {
+         background: orange;
+      }
+      .alert__annotation-colour--white {
+         background: white;
+      }
+      .alert__annotation-colour--grey {
+         background: grey;
+      }
+   }
+}
+.alert__edit-feed-name {
+   min-width: 36rem;
+}
+.scope-modal {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0);
+   z-index: 99;
+   height: 0;
+   transition: background 0.4s;
+   &.cover-on {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.822);
+   }
+}
+.alert__gallery {
+   width: 90%;
+   height: 90%;
+   top: -500%;
+   &.show {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+}

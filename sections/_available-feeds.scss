@@ -1,0 +1,111 @@
+.available-feeds {
+   display: flex;
+   height: 11rem;
+   background: rgba(35, 35, 35, 0.2);
+   justify-content: center;
+   position: relative;
+}
+.available-feeds__feed {
+   width: 21rem;
+   background: $col-dark-grey url(/img/avatar-dark.svg) no-repeat bottom center;
+   padding: $gutter;
+   position: relative;
+   margin-right: 2rem;
+   @extend .flex-center;
+   &:last-child {
+      margin-right: 0;
+   }
+   h3, p {
+      margin: 0;
+   }
+   h3 {
+      color: $col-primary;
+      margin-bottom: 0.4rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+   p {
+      color: #fff;
+      font-size: 1.4rem;
+   }
+   img, svg, button, .available-feeds__feed__icon  {
+      display: none;
+   }
+   &.feed-inactive:hover {
+      p {
+         display: none;
+      }
+      h3 {
+         display: none;
+      }
+      & > button {
+         display: block;
+      }
+   }
+   &.feed-active {
+      position: relative;
+      img, h3 {
+         display: block;
+      }
+      img {
+         max-height: 11rem;
+      }
+      img, video {
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         object-fit: cover;
+      }
+      .available-feeds__feed__icon {
+         color: $col-primary;
+         position: absolute;
+         z-index: 9;
+         font-size: 2rem;
+         width: 3.2rem;
+         height: 3.2rem;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         &.available-feeds__feed__icon-mic, &.available-feeds__feed__full-screen {
+            top: 0.4rem;
+            left: 0.4rem;
+         }
+         &.available-feeds__feed__icon-ellipsis {
+            top: 0.4rem;
+            right: 0.4rem;
+         }
+         &:hover {
+            @include circleBgHover(0.1);
+         }
+      }
+      h3 { 
+         @include feedTitle(); 
+      }
+      .feed-para-waiting-room {
+         display: none;
+      }
+   }
+}
+.available-feeds__proctor {
+   position: absolute;
+   visibility: hidden;
+   opacity: 0; 
+   transition: all 0.5s;
+   right: -100rem;
+   &.show {
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+      right: 0;
+   }
+}
+.available-feeds__proctee {
+   position: relative;
+}
+.available-feeds__data {
+   h3:before {
+      display: none;
+   }
+}

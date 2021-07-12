@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$max-width: 100%;
+$gutter: 2rem;
+
+$col-primary: #01ccd3;
+$col-secondary: #1288CA;
+$col-tertiary: #FFF;
+$col-success: #08B004;
+$col-warning: #D40404;
+
+$col-dark-grey: #131313;
+$col-white: #fff;
+$col-dark-green: #007E84;
+
+$btn-stroke: 0.2rem;
+$corners: 1.2rem;
+$transition: 0.4s;
+
+$dark-blue: #082B41;
+$placeholder: #C4C4C4; 
+$ico-fill: #004E51;
+
+$ico-stroke: #00F5FF; 
+$ico-stroke-hover: #99fcff;
+
+$button-hover: #0b3955;
+
+$contact-bg: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
+$chat-bg: linear-gradient(92.4deg, #002A4E 0%, #014968 100%);
+$button-bg: linear-gradient(180deg, #001C2E 0%, #082B41 100%);

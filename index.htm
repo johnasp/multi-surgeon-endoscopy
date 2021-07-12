@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurgeTeams</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/1340da3e3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="scope-wrapper">
+        <nav class="scope-annotate">  
+            <a href="#" id="ico-brackets" tooltip="Im a bracket" tooltip-position="right">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-fill" d="M31.92 5.04H10.08a2.94 2.94 0 00-2.94 2.94V33.6a2.94 2.94 0 002.94 2.94h21.84a2.94 2.94 0 002.94-2.94V7.98a2.94 2.94 0 00-2.94-2.94z"/>
+                    <path class="ico-stroke" d="M5.04 33.39c0 1.707 1.448 3.097 3.255 3.148l.105.002h2.94v-2.362H8.4c-.443 0-.806-.322-.838-.73l-.002-.058V8.19c0-.415.343-.755.777-.785l.063-.002h2.94V5.04H8.4c-1.82 0-3.303 1.358-3.358 3.052l-.002.098v25.2zM36.96 33.39c0 1.707-1.448 3.097-3.255 3.148l-.105.002h-2.94v-2.362h2.94c.443 0 .806-.322.838-.73l.002-.058V8.19c0-.415-.343-.755-.777-.785l-.063-.002h-2.94V5.04h2.94c1.82 0 3.303 1.358 3.358 3.052l.002.098v25.2z"/>
+                </svg>
+                </a>
+        
+            <a href="#" id="ico-draw" tooltip="Freeform draw">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M31.412 2.523a.84.84 0 00-.512.223L8.663 24.164a.84.84 0 00-.25.473l-1.6 9.213a72.994 72.994 0 01-3.453-1.824.841.841 0 00-.84 1.456s2.592 1.492 5.855 2.98c3.262 1.487 7.146 3.018 10.107 3.018 1.554 0 2.841-.613 3.872-1.444 1.032-.83 1.847-1.877 2.639-2.874.792-.997 1.555-1.933 2.389-2.598.834-.666 1.7-1.063 2.861-1.063h5.04a.84.84 0 100-1.68h-5.04c-1.57 0-2.87.6-3.911 1.43-1.042.831-1.86 1.876-2.652 2.874-.793.998-1.563 1.947-2.389 2.612-.826.665-1.67 1.063-2.809 1.063-2.34 0-6.228-1.422-9.412-2.874-.036-.017-.068-.036-.105-.053l8.086-2.572a.841.841 0 00.341-.21l21.423-20.998a.84.84 0 00.026-1.168l-6.747-7.14a.84.84 0 00-.682-.262z"/>
+                    <path class="ico-fill" d="M31.451 4.557l5.592 5.919-20.044 19.647-6.34-5.539L31.45 4.557zM9.871 26.12l5.618 4.921-6.865 2.179 1.247-7.1z"/>
+                </svg>          
+            </a>
+        
+            <a href="#" id="ico-elipse" tooltip="Draw an elipse" tooltip-position="right" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M21 9.66c9.279 0 16.8 5.077 16.8 11.34S30.28 32.34 21 32.34c-9.278 0-16.8-5.077-16.8-11.34S11.722 9.66 21 9.66z"/>
+                    <path class="ico-fill" d="M21 11.76c-8.253 0-14.7 4.351-14.7 9.24s6.447 9.24 14.7 9.24c8.254 0 14.7-4.351 14.7-9.24s-6.446-9.24-14.7-9.24z"/>
+                </svg>          
+            </a>
+        
+            <a href="#" id="ico-finger" tooltip="Point with a finger" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <g clip-path="url(#clip0)">
+                    <path class="ico-stroke" d="M35.767 21.16l.053-5.078a3.389 3.389 0 00-1.797-3.044 3.357 3.357 0 00-1.578-.391 3.4 3.4 0 00-1.666.438 3.404 3.404 0 00-1.77-2.583 3.355 3.355 0 00-1.574-.39 3.43 3.43 0 00-1.987.642 3.375 3.375 0 00-3.037-1.906c-.573 0-1.13.144-1.63.417l.05-4.593a3.392 3.392 0 00-1.798-3.044 3.355 3.355 0 00-1.578-.39c-.91 0-1.771.358-2.423 1.008a3.469 3.469 0 00-1.025 2.433l-.164 15.47-1.281-2.444a3.375 3.375 0 00-4.606-1.392 3.465 3.465 0 00-1.67 2.04 3.426 3.426 0 00.234 2.618l8.982 17.134a.871.871 0 00.78.473l13.37-.013a.9.9 0 00.802-.494c.214-.421 5.243-10.349 5.313-16.912z"/>
+                    <path class="ico-fill" d="M16.835 36.777L8.1 20.117a1.66 1.66 0 01.683-2.22 1.613 1.613 0 011.53-.008c.284.15.514.383.666.671l1.61 3.075c.153.29.51.968 1.075 1.269.278.148.568.185.863.11 1.072-.273 1.088-1.687 1.092-2.152l.173-16.185a1.655 1.655 0 011.643-1.64c.262 0 .521.064.751.186.535.285.863.84.857 1.45l-.14 13.249c-.006.48.402.899.882.9a.911.911 0 00.903-.902l.06-5.634c.005-.436.178-.847.489-1.156.31-.31.72-.482 1.154-.482a1.609 1.609 0 011.609 1.636l-.074 6.902c-.005.48.404.9.884.9a.905.905 0 00.902-.9l.06-5.633c.005-.437.18-.848.49-1.159.31-.31.72-.481 1.153-.482a1.609 1.609 0 011.609 1.637l-.073 6.903a.885.885 0 001.517.634.906.906 0 00.268-.636l.047-4.363c.005-.437.178-.848.489-1.159a1.627 1.627 0 011.906-.295c.535.284.863.84.856 1.45l-.054 5.078c-.057 5.38-3.951 13.716-4.868 15.605l-12.278.011z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                        <path fill="#fff" d="M0 0h42v42H0z"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        
+            <a href="#" id="ico-line-thickness" tooltip="Line thickness" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M10.08 7.14H4.62a.42.42 0 00-.42.42v1.68c0 .232.188.42.42.42h5.46a.42.42 0 00.42-.42V7.56a.42.42 0 00-.42-.42zM19.04 7.14h-5.46a.42.42 0 00-.42.42v1.68c0 .232.188.42.42.42h5.46a.42.42 0 00.42-.42V7.56a.42.42 0 00-.42-.42zM28 7.14h-5.46a.42.42 0 00-.42.42v1.68c0 .232.188.42.42.42H28a.42.42 0 00.42-.42V7.56a.42.42 0 00-.42-.42zM37.38 7.14H31.5a.42.42 0 00-.42.42v1.68c0 .232.188.42.42.42h5.88a.42.42 0 00.42-.42V7.56a.42.42 0 00-.42-.42zM37.8 18.69H5.04a.42.42 0 00-.42.42v1.68c0 .232.189.42.42.42H37.8a.42.42 0 00.42-.42v-1.68a.42.42 0 00-.42-.42zM37.38 30.24H4.62a.42.42 0 00-.42.42v4.2c0 .232.188.42.42.42h32.76a.42.42 0 00.42-.42v-4.2a.42.42 0 00-.42-.42z"/>
+                </svg>
+            </a>
+        
+            <a href="#" id="ico-opacity" tooltip="Change object opacity" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M21.965 4.106l-.924-.746-.924.746C19.587 4.535 7.14 14.71 7.14 24.81c0 7.665 6.236 13.902 13.902 13.902 7.665 0 13.901-6.237 13.901-13.902 0-10.1-12.448-20.274-12.978-20.703z"/>
+                    <path class="ico-fill" d="M21.042 7.188c2.662 2.366 10.188 9.623 10.9 16.577H10.14c.714-6.942 8.241-14.208 10.902-16.577z"/>
+                </svg>
+            </a>
+        
+            <a href="#" id="ico-pointy" tooltip="DUNNO WHAT THIS IS" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M32.68 13.124l-2.288-4.38a3.321 3.321 0 00-5.736-.272 3.34 3.34 0 00-2.717-1.409c-.533 0-1.066.133-1.54.384a3.345 3.345 0 00-1.423 1.457 3.327 3.327 0 00-4.72.85l-2.068-3.962A3.325 3.325 0 009.235 4 3.326 3.326 0 006.06 6.356a3.348 3.348 0 00.232 2.555l6.97 13.35-2.232-1.514a3.312 3.312 0 00-4.622.907 3.346 3.346 0 00-.505 2.513c.17.88.67 1.64 1.406 2.139l15.64 10.604a.858.858 0 00.893.049l11.552-6.11a.874.874 0 00.466-.79c-.008-.46-.224-11.272-3.18-16.935z"/>
+                    <path class="ico-fill" d="M23.492 35.162L8.283 24.852a1.605 1.605 0 01-.43-2.217 1.58 1.58 0 012.203-.433l2.807 1.904c.264.18.884.598 1.512.598.308 0 .576-.1.796-.299.801-.724.165-1.943-.045-2.344L7.836 8.095a1.598 1.598 0 01-.111-1.218 1.584 1.584 0 012.92-.269l5.968 11.432a.889.889 0 001.177.369.882.882 0 00.366-1.185l-2.538-4.862a1.591 1.591 0 01-.11-1.215 1.585 1.585 0 012.92-.27l3.11 5.956a.888.888 0 001.177.368.873.873 0 00.427-.515.874.874 0 00-.061-.669l-2.537-4.86a1.595 1.595 0 01-.11-1.217 1.586 1.586 0 011.512-1.123c.593 0 1.133.328 1.407.854l3.11 5.956a.868.868 0 001.603-.148.875.875 0 00-.06-.669l-1.966-3.765a1.596 1.596 0 01-.11-1.217 1.585 1.585 0 012.92-.269l2.287 4.381c2.424 4.643 2.89 13.572 2.965 15.611l-10.61 5.611z"/>
+                </svg>
+            </a>
+        
+            <a href="#" id="ico-recticle" tooltip="Show a recticle" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M20.8 4C11.524 4 4 11.524 4 20.8s7.524 16.8 16.8 16.8 16.8-7.524 16.8-16.8S30.076 4 20.8 4z"/>
+                    <path class="ico-fill" d="M21.747 35.376V30.36c0-.474-.332-.9-.805-.994-.615-.095-1.088.378-1.088.946v5.064a.305.305 0 01-.284.284c-7.24-.615-13.014-6.389-13.63-13.63 0-.142.142-.284.284-.284h5.017c.473 0 .899-.33.994-.804.094-.615-.38-1.088-.947-1.088H6.224a.305.305 0 01-.284-.284c.616-7.241 6.39-13.014 13.63-13.63.142 0 .284.142.284.284v5.017c0 .473.33.899.804.993.615.095 1.089-.378 1.089-.946V6.224c0-.142.142-.284.284-.284 7.24.616 13.014 6.389 13.581 13.582a.305.305 0 01-.283.284h-4.97c-.473 0-.899.331-.993.805-.095.615.378 1.088.946 1.088h5.064c.142 0 .284.142.284.284-.615 7.24-6.389 13.014-13.582 13.582-.19.095-.331-.047-.331-.19z"/>
+                </svg>          
+            </a>
+        
+            <a href="#" id="ico-revert" tooltip="Undo last operation" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" d="M23.835 13.86H17.22V7.245a.945.945 0 00-1.588-.692L2.402 18.838a.944.944 0 000 1.384l13.23 12.285a.945.945 0 001.588-.692V25.2h4.725c7.928 0 12.932 2.202 16.224 7.14a.945.945 0 001.731-.525c0-8.283-4.207-17.955-16.065-17.955z"/>
+                    <path class="ico-fill" d="M22.028 23.086H16.39a.938.938 0 00-.94.941V29.4L4.622 19.32 15.45 9.24v5.373a.942.942 0 00.94.941h7.516c9.034 0 13.006 6.506 13.893 13.054-3.582-3.798-8.58-5.522-15.772-5.522z"/>
+                </svg>
+            </a>
+        
+            <a href="#" id="ico-select" tooltip="Drag & move?" tooltip-position="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 42 42">
+                    <path class="ico-stroke" fill-rule="evenodd" d="M16.448 27.549l-4.135 3.653a2.602 2.602 0 01-2.799.42 2.626 2.626 0 01-1.534-2.39l.008-23.668c0-.938.498-1.803 1.305-2.272a2.594 2.594 0 012.609 0c4.472 2.594 15.44 8.953 20.391 11.828a2.623 2.623 0 011.294 2.528 2.622 2.622 0 01-1.762 2.229l-5.21 1.77 5.73 9.957a3.946 3.946 0 01-1.426 5.373l-3.386 1.975a3.899 3.899 0 01-2.97.395 3.91 3.91 0 01-2.379-1.83c-1.912-3.323-3.826-6.644-5.736-9.968z" clip-rule="evenodd"/>
+                    <path class="ico-fill" fill-rule="evenodd" d="M10.263 4.815l-.006 24.483 4.268-3.78a2.691 2.691 0 012.216-.638 2.693 2.693 0 011.895 1.32c1.396 2.426 4.236 7.369 5.925 10.308.18.315.474.54.82.632.344.095.712.046 1.023-.137l3.496-2.04a1.362 1.362 0 00.492-1.852l-5.918-10.3a2.725 2.725 0 01-.19-2.314 2.716 2.716 0 011.659-1.615l5.383-1.832L10.263 4.815z" clip-rule="evenodd"/>
+                </svg>          
+            </a>   
+        </nav>
+
+        <main class="scope-main">
+            <div class="feeds-wrapper">
+                <section class="scope-main__feed">
+                    <div class="scope-main__feed-recording">
+                        <span class="scope-main__feed-live-tag">live</span>
+                        <span class="scope-main__feed-recording-tag"><i class="fas fa-video"></i> 03:45</span>
+                    </div>
+                    <time class="scope-record-timer">
+                        <span>00:37</span>
+                    </time>
+                    <i class="fas fa-user-md-chat contacts-chat-menu__icon"></i>
+                   
+                    <div class="scope-main__data-feeds">
+                        <div class="scope-main__data-feed">
+                            <i class="fas fa-expand-wide scope-main__data-feed__full-screen"></i>
+                            <!-- <i class="fas fa-ellipsis-v scope-main__data-feed__ellipsis"></i> -->
+                            <img src="img/telem.jpeg">
+                            <h3>Telemetry</h3>
+                        </div>
+
+                        <div class="scope-main__data-feed">
+                            <i class="fas fa-expand-wide scope-main__data-feed__full-screen"></i>
+                            <!-- <i class="fas fa-ellipsis-v scope-main__data-feed__ellipsis"></i> -->
+                            <img src="img/ultrasound.jpeg">
+                            <h3>Ultrasound</h3>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="available-feeds">
+                    <div class="available-feeds__feed available-feeds__proctee feed-active">
+                        <i class="fas fa-microphone available-feeds__feed__icon available-feeds__feed__icon-mic"></i>
+                        <i class="fas fa-ellipsis-v available-feeds__feed__icon available-feeds__feed__icon-ellipsis"></i>
+                        <img src="img/thumb-fareed.png">
+                        <h3>Fareed Iqbal</h3>
+                        <p class="feed-para-waiting-room">is in the waiting room</p>
+                        <div class="scope-popup scope-popup__proctee">
+                            <div class="scope-popup__body">
+                                <header>
+                                    <i class="fas fa-times scope-popup__close-icon"></i>
+                                </header>
+                                <p class="scope-popup__edit-name">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Edit feed name</span>
+                                </p>
+                                <p class="scope-popup__edit-colour">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Edit annotation colour</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="available-feeds__feed available-feeds__proctor available-feeds__sajad-rana feed-inactive">
+                        <i class="fas fa-microphone available-feeds__feed__icon available-feeds__feed__icon-mic"></i>
+                        <i class="fas fa-ellipsis-v available-feeds__feed__icon available-feeds__feed__icon-ellipsis"></i>
+                        <img src="img/thumb-saj.jpeg" style="min-width: 210px;">
+                        <h3>Sajad Rana</h3>
+                        <p>is in the waiting room</p>
+                        <button class="btn btn-primary available-feeds__btn-admit">
+                            <span>Admit</span>
+                            <i class="fas fa-user-plus"></i>
+                        </button>
+                        <div class="scope-popup scope-popup__proctor">
+                            <div class="scope-popup__body">
+                                <header>
+                                    <i class="fas fa-times scope-popup__close-icon"></i>
+                                </header>
+                                <p class="scope-popup__proctor-menu__deactive">
+                                    <i class="fas fa-video-slash"></i>
+                                    <span>Deactivate feed</span>
+                                </p>
+                                <p class="scope-popup__proctor-menu__edit-proctor">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Edit feed name</span>
+                                </p>
+                                <p class="scope-popup__proctor-menu__edit-colour">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Edit annotation colour</span>
+                                </p>
+                                <p class="scope-popup__proctor-menu__remove-feed">
+                                    <i class="fas fa-trash"></i>
+                                    <span>Remove feed</span>
+                                </p>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="available-feeds__feed available-feeds__data feed-active">
+                        <i class="fas fa-expand-wide available-feeds__feed__icon available-feeds__feed__full-screen"></i>
+                        <i class="fas fa-ellipsis-v available-feeds__feed__icon available-feeds__feed__icon-ellipsis"></i>
+                        <img src="img/telem.jpeg" style="min-width: 210px;">
+                        <h3>Telemetry</h3>
+                        <div class="scope-popup">
+                            <div class="scope-popup__body">
+                                <header>
+                                    <i class="fas fa-times scope-popup__close-icon"></i>
+                                </header>
+                                <p class="scope-popup__data-menu__add-to-master">
+                                    <i class="fad fa-plus-circle"></i>
+                                    <span>Add to master feed</span>
+                                </p>
+                                <p class="scope-popup__data-menu__make-master">
+                                    <i class="fas fas fa-expand-wide"></i>
+                                    <span>Make master feed</span>
+                                </p>
+                                <p class="scope-popup__data-menu__edit-name">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Edit feed name</span>
+                                </p>
+                                <p class="scope-popup__data-menu__remove-feed">
+                                    <i class="fas fa-trash"></i>
+                                    <span>Remove feed</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <nav class="scope-main__menu">
+                <button class="btn-annotate">
+                    <i class="fas fa-pencil"></i>
+                    <span>Annotate</span> 
+                </button> 
+
+                <button class="btn-broadcast">
+                    <i class="fas fa-signal-stream"></i>   
+                    <span>Broadcast</span>
+                </button>
+
+                <button class="btn-capture">
+                    <i class="far fa-camera"></i>
+                    <span>Capture</span>
+                </button>
+
+                <button class="btn-record">
+                    <i class="far fa-video"></i>                  
+                    <span>Record</span>
+                </button>
+
+                <button class="btn-gallery">
+                    <i class="far fa-photo-video"></i>
+                    <span>Gallery</span>
+                </button>
+
+                <button class="btn-mute">
+                    <i class="fas fa-microphone"></i>
+                    <span>Mute all</span>
+                </button>
+
+                <button class="btn-hide">
+                    <i class="fas fa-users"></i> 
+                    <span>Hide all</span>
+                </button>
+
+                <button class="btn-complete">
+                    <i class="fas fa-check"></i>
+                    <span>Complete</span>
+                </button>
+            </nav>
+        </main>
+
+        <aside class="scope__sidebar">
+            <div class="scope-contacts scope-contacts__proctors">
+                <header class="chat-contacts__header">
+                    <i class="fas"></i>
+                    <h2>Contacts</h2>
+                    <i class="fas fa-times scope__sidebar__close"></i>
+                </header>
+                <section>
+                    <div class="scope-contacts__filter">
+                        <input type="text" name="Filter contacts" placeholder="Filter contact list">
+                    </div>
+                    
+                    <div class="scope-contacts__card">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/fareed.png" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>Fareed Iqbal</h3>
+                        </div>
+                        <div class="scope-contacts__card__action">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-sms"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scope-contacts__card">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/paul.jpg" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>Paul Fothergill</h3>
+                        </div>
+                        <div class="scope-contacts__card__action">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-sms"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scope-contacts__card scope-contacts__card__sajad">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/sajad.jpg" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>Sajad Rana</h3>
+                        </div>
+                        <div class="scope-contacts__quick-add__sajad">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-user-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scope-contacts__card">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/blake.jpg" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>Blake Edwards</h3>
+                        </div>
+                        <div class="scope-contacts__card__action">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-sms"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scope-contacts__card">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/ashley.jpg" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>Ashley Begley</h3>
+                        </div>
+                        <div class="scope-contacts__card__action">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-sms"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scope-contacts__card">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/john.jpg" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>John McMurray</h3>
+                        </div>
+                        <div class="scope-contacts__card__action">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-sms"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scope-contacts__card">
+                        <div class="scope-contacts__avatar">
+                            <img src="img/daniel.jpg" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="scope-contacts__card__name">
+                            <h3>Daniel Smith</h3>
+                        </div>
+                        <div class="scope-contacts__card__action">
+                            <button class="btn btn-secondary btn-square">
+                                <i class="fas fa-user-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <button class="btn btn-primary">
+                        <span>Add new contact</span>
+                        <i class="fas fa-user-md"></i>
+                    </button>
+                </footer>
+            </div>
+
+            <div class="scope-chat">
+                <header class="chat-contacts__header">
+                    <i class="fas fa-chevron-left scope-chat__icon-back"></i>
+                    <div class="scope-chat__name">
+                        <div class="scope-contacts__avatar scope-contacts__avatar__chat">
+                            <img src="img/fareed.png" alt="Pic of user">
+                            <span class="online-status"></span>
+                        </div>
+                        <h2> Sajad Ranaa</h2>
+                    </div>
+                    <i class="fas fa-times chat_sidebar__close"></i>
+                </header>
+                <section class="scope-chat__body">    
+                    <time class="scope-chat__body--date">June 10</time>
+                    <div class="scope-chat__message scope-chat__message-proctee">
+                        <time class="scope-chat__body--time">21:00</time>
+                        <p>Hi Saj - I need some advice on scope I’m doing.</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctor">
+                        <time class="scope-chat__body--time">21:03</time>
+                        <p>Sure - what's up?</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctee">
+                        <time class="scope-chat__body--time">21:06</time>
+                        <p>Can you have a look at this patient?  Im concerned about an area of the bowel.</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctor">
+                        <time class="scope-chat__body--time">21:08</time>
+                        <p>What exactly is the problem?</p>
+                    </div>
+
+                <div class="scope-chat__message scope-chat__message-proctee">
+                        <time class="scope-chat__body--time">21:10</time>
+                        <p>There is a polyp that I don't like the look of.  Could do with another pair of eyes on it.</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctee">
+                        <time class="scope-chat__body--time">21:10</time>
+                        <p>Are you free now to take a look?</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctor">
+                        <time class="scope-chat__body--time">21:12</time>
+                        <p>Yes no problem, add me to the scope and lets take a look.</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctor">
+                        <time class="scope-chat__body--time">21:08</time>
+                        <p>What exactly is the problem?</p>
+                    </div>
+
+                <div class="scope-chat__message scope-chat__message-proctee">
+                        <time class="scope-chat__body--time">21:10</time>
+                        <p>There is a polyp that I don't like the look of.  Could do with another pair of eyes on it.</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctee">
+                        <time class="scope-chat__body--time">21:10</time>
+                        <p>Are you free now to take a look?</p>
+                    </div>
+
+                    <div class="scope-chat__message scope-chat__message-proctor">
+                        <time class="scope-chat__body--time">21:12</time>
+                        <p>Yes no problem, add me to the scope and lets take a look.</p>
+                    </div>
+
+
+                </section>
+                <footer class="scope-chat__footer">
+                    <span class="scope-chat__footer__delete-contact">
+                        <i class="fas fa-times"></i>
+                        <a href="#">Delete contact</a>
+                    </span>
+                    <button class="btn btn-primary scope-chat__footer__add-proctor">
+                        <span>Add to Scope</span>
+                        <i class="fas fa-user-md"></i>
+                    </button>
+                    <div class="scope-chat__footer__send-message">
+                        <input type="text" name="" placeholder="Type your message">
+                        <img src="img/icon-send.svg" alt="Click to send" width="25" height="25">
+                    </div>
+                </footer>
+            </div>
+        </aside>
+
+    </div> <!-- scope-wrapper -->
+
+    <div class="alert alert__dialog alert-broadcast ">
+        <div class="alert-body">
+            <i class="fas fa-times close-alert"></i>
+            <h2>Start your broadcast</h2>
+            <p>http://chip.surgease.com/fdsfhous345er</p>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-alert-copy">Copy link</button>
+                <button class="btn btn-success-solid btn-alert-live">Go live</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert__dialog alert-broadcast-off ">
+        <div class="alert-body">
+            <i class="fas fa-times close-alert"></i>
+            <h2>Stop broadcasting?</h2>
+            <div class="btn-group">
+                <button class="btn btn-success continue-broadcast">Continue</button>
+                <button class="btn btn-warning stop-brodcast">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert__dialog alert__annotation-colour  ">
+        <div class="alert-body">
+            <i class="fas fa-times close-alert "></i>
+            <h2>Edit annotation colour</h2>
+            <div class="alert__annotation-colour__palette">
+                <a class="alert__annotation-colour--red"><span class="sr-only">red</span></a>
+                <a class="alert__annotation-colour--green"><span class="sr-only">green</span></a>
+                <a class="alert__annotation-colour--blue"><span class="sr-only">blue</span></a>
+                <a class="alert__annotation-colour--pink"><span class="sr-only">pink</span></a>
+                <a class="alert__annotation-colour--yellow"><span class="sr-only">yellow</span></a>
+                <a class="alert__annotation-colour--orange"><span class="sr-only">orange</span></a>
+                <a class="alert__annotation-colour--white"><span class="sr-only">white</span></a>
+                <a class="alert__annotation-colour--grey"><span class="sr-only">grey</span></a>
+                <a class="alert__annotation-colour--grey"><span class="sr-only">grey</span></a>
+                <a class="alert__annotation-colour--grey"><span class="sr-only">grey</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert__dialog alert__edit-feed-name ">
+        <div class="alert-body">
+            <i class="alert__edit-feed-name__icon__close fas fa-times close-alert"></i>
+            <h2>Edit feed name</h2>
+            <div class="alert__edit-feed-name__form">
+                <label for="feed-name" class="sr-only">Feed name</label>
+                <input type="text">
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-success-solid">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scope-gallery scope-modal"> 
+        <div class="alert alert__gallery">
+            <div class="alert-body">
+                <i class="fas fa-times close-gallery"></i>
+                <h2>Gallery</h2>
+                    <div class="scope-gallery__content">
+                        <div class="scope-gallery__control__left">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="scope-gallery__main-image">
+                             <img src="https://picsum.photos/id/564/1000/600" alt="">
+                        </div>
+                        <div class="scope-gallery__control__right" >
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <nav class="scope-gallery__thumbnails">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                            <img src="https://picsum.photos/id/1076/100/60" alt="">
+                        </nav>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert__dialog alert__dialog__complete">
+        <div class="alert-body">
+            <i class="fas fa-times scope-complete__close-icon scope-icon-circle-hover"></i>
+            <h2>Complete session</h2>
+            <div class="btn-group">
+                <button class="btn btn-warning">Exit without saving</button>
+                <button class="btn btn-secondary">Save Scope and exit</button>
+                <button class="btn btn-success-solid">Create Report and exit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen-flash"></div>
+
+    <script src="https://use.fontawesome.com/53c5a5742b.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>

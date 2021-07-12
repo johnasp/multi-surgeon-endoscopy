@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: .8em 1.4em;
+   color: #fff;
+   border-radius: 0.4em;
+   font-size: 1.6rem;
+   font-weight: bold;
+   background: transparent;
+   width: 100%;
+   border: none;
+   i {
+      padding-left: 1.2rem;
+   }
+}
+.btn-group {
+   display: flex;
+   button {
+      margin-right: 1.2rem;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}
+
+.btn-primary {
+   border: $btn-stroke solid $col-primary;
+   &:hover {
+      background: $col-primary;
+      cursor: pointer;
+   }
+}
+.btn-primary-solid {
+   background: $col-primary;
+   &:hover {
+      background: darken($col-primary, 5%);
+      cursor: pointer;
+   }
+}
+.btn-secondary {
+   border: $btn-stroke solid $col-secondary;
+   &:hover {
+      background: $col-secondary;
+      cursor: pointer;
+   }
+}
+.btn-secondary-solid {
+   background: $col-secondary;
+   &:hover {
+      background: darken($col-secondary, 5%);
+      cursor: pointer;
+   }
+}
+.btn-tertiary {
+   border: $btn-stroke solid $col-tertiary;
+   &:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.123);
+   }
+}
+.btn-tertiary-solid {
+   background: $col-tertiary;
+   background: lighten($col-tertiary, 95%);
+}
+.btn-success {
+   border: $btn-stroke solid $col-success;
+   &:hover {
+      background: $col-success;
+      cursor: pointer;
+   }
+}
+.btn-success-solid {
+   background: $col-success;
+   &:hover {
+      background: darken($col-success, 5%);
+      cursor: pointer;
+   }
+}
+.btn-warning {
+   border: $btn-stroke solid $col-warning;
+   &:hover {
+      background: $col-warning;
+      cursor: pointer;
+   }
+}
+.btn-warning-solid {
+   background: $col-warning;
+}
+.btn-square {
+   padding: 0.6em;
+   min-width: 4.8rem;
+   i {
+      padding-left: 0;
+   }
+}

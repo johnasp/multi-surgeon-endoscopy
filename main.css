@@ -1,0 +1,1901 @@
+.flex-center, .scope-annotate a, .scope-chat__name h2, .available-feeds__feed, .scope-gallery .scope-gallery__content i, .scope-main__menu button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 0.1rem dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -0.2rem;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, html {
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+html {
+  background: #004f58;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  color: #131313;
+  letter-spacing: 0.05rem;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.2em;
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.hide {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.screen-flash {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000000000;
+  background: white;
+}
+
+.screen-flash-on {
+  -webkit-animation: screenFlash 0.4s;
+          animation: screenFlash 0.4s;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes screenFlash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes screenFlash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blinkingText {
+  0% {
+    color: #D40404;
+  }
+  49% {
+    color: #D40404;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #D40404;
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #D40404;
+  }
+  49% {
+    color: #D40404;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #D40404;
+  }
+}
+
+.alert {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00F5FF), to(rgba(0, 245, 255, 0.1)));
+  background: linear-gradient(180deg, #00F5FF 0%, rgba(0, 245, 255, 0.1) 100%);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.8rem 0.1rem rgba(0, 0, 0, 0.91);
+          box-shadow: 0.2rem 0.2rem 0.8rem 0.1rem rgba(0, 0, 0, 0.91);
+  padding: 0.1rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  bottom: 1rem;
+  z-index: 99;
+}
+
+.alert.show {
+  opacity: 1;
+}
+
+.alert i.fa-times {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  height: 4.2rem;
+  width: 4.2rem;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.alert i.fa-times:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10rem;
+}
+
+.alert .alert-body {
+  padding: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#001C2E), to(#082B41));
+  background: linear-gradient(180deg, #001C2E 0%, #082B41 100%);
+  border-radius: 1.2rem;
+  text-align: center;
+  height: 100%;
+}
+
+.alert .btn {
+  margin-top: 2rem;
+}
+
+.alert__dialog {
+  max-width: 36rem;
+  left: -50rem;
+}
+
+.alert__dialog.show {
+  left: 1rem;
+}
+
+.alert__dialog__complete {
+  min-width: 57rem;
+}
+
+.alert__dialog__complete .alert-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.alert__dialog__complete.show {
+  left: 1rem;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette {
+  font-size: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette a {
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  display: inline-block;
+  border-radius: 0.3rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette a:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--red {
+  background: red;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--green {
+  background: green;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--blue {
+  background: #1d84fa;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--pink {
+  background: pink;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--yellow {
+  background: yellow;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--orange {
+  background: orange;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--white {
+  background: white;
+}
+
+.alert__annotation-colour .alert__annotation-colour__palette .alert__annotation-colour--grey {
+  background: grey;
+}
+
+.alert__edit-feed-name {
+  min-width: 36rem;
+}
+
+.scope-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99;
+  height: 0;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.scope-modal.cover-on {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.822);
+}
+
+.alert__gallery {
+  width: 90%;
+  height: 90%;
+  top: -500%;
+}
+
+.alert__gallery.show {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .8em 1.4em;
+  color: #fff;
+  border-radius: 0.4em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: transparent;
+  width: 100%;
+  border: none;
+}
+
+.btn i {
+  padding-left: 1.2rem;
+}
+
+.btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-group button {
+  margin-right: 1.2rem;
+}
+
+.btn-group button:last-child {
+  margin-right: 0;
+}
+
+.btn-primary {
+  border: 0.2rem solid #01ccd3;
+}
+
+.btn-primary:hover {
+  background: #01ccd3;
+  cursor: pointer;
+}
+
+.btn-primary-solid {
+  background: #01ccd3;
+}
+
+.btn-primary-solid:hover {
+  background: #01b3ba;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  border: 0.2rem solid #1288CA;
+}
+
+.btn-secondary:hover {
+  background: #1288CA;
+  cursor: pointer;
+}
+
+.btn-secondary-solid {
+  background: #1288CA;
+}
+
+.btn-secondary-solid:hover {
+  background: #1078b3;
+  cursor: pointer;
+}
+
+.btn-tertiary {
+  border: 0.2rem solid #FFF;
+}
+
+.btn-tertiary:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.123);
+}
+
+.btn-tertiary-solid {
+  background: #FFF;
+  background: white;
+}
+
+.btn-success {
+  border: 0.2rem solid #08B004;
+}
+
+.btn-success:hover {
+  background: #08B004;
+  cursor: pointer;
+}
+
+.btn-success-solid {
+  background: #08B004;
+}
+
+.btn-success-solid:hover {
+  background: #079703;
+  cursor: pointer;
+}
+
+.btn-warning {
+  border: 0.2rem solid #D40404;
+}
+
+.btn-warning:hover {
+  background: #D40404;
+  cursor: pointer;
+}
+
+.btn-warning-solid {
+  background: #D40404;
+}
+
+.btn-square {
+  padding: 0.6em;
+  min-width: 4.8rem;
+}
+
+.btn-square i {
+  padding-left: 0;
+}
+
+.scope-popup {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00F5FF), to(rgba(0, 245, 255, 0.1)));
+  background: linear-gradient(180deg, #00F5FF 0%, rgba(0, 245, 255, 0.1) 100%);
+  padding: 0.1rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  position: absolute;
+  bottom: 2rem;
+  min-width: 24rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+
+.scope-popup .scope-popup__body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#001C2E), to(#082B41));
+  background: linear-gradient(180deg, #001C2E 0%, #082B41 100%);
+  border-radius: 1.2rem;
+  position: relative;
+}
+
+.scope-popup .scope-popup__body header {
+  text-align: right;
+  position: relative;
+  height: 2.6rem;
+}
+
+.scope-popup .scope-popup__body header i {
+  position: relative;
+  top: 0.8rem;
+  right: 1rem;
+  font-size: 2.2rem;
+}
+
+.scope-popup .scope-popup__body header i:hover {
+  color: #01ccd3;
+  cursor: pointer;
+}
+
+.scope-popup .scope-popup__body p {
+  padding: 1.2rem 2.4rem;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.scope-popup .scope-popup__body p i {
+  color: #01ccd3;
+  margin-right: 0.6rem;
+}
+
+.scope-popup .scope-popup__body p i::hover {
+  cursor: pointer;
+}
+
+.scope-popup .scope-popup__body p:hover {
+  background: #0b3955;
+}
+
+.scope-popup .scope-popup__body p:last-child {
+  border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.scope-popup.show {
+  bottom: 12rem;
+  opacity: 1;
+}
+
+.scope-annotate {
+  visibility: hidden;
+  opacity: 0;
+  background: #082B41;
+  padding-top: 2rem;
+  width: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.scope-annotate.scope-annotate__on {
+  width: 8rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.scope-annotate a {
+  height: 6.6rem;
+  position: relative;
+}
+
+.scope-annotate a::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 0.4rem 0.6rem 0 0.6rem;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  z-index: 100;
+  opacity: 0;
+}
+
+.scope-annotate a::after {
+  content: attr(tooltip);
+  position: absolute;
+  left: 50%;
+  top: -0.6rem;
+  -webkit-transform: translateX(-50%) translateY(-100%);
+          transform: translateX(-50%) translateY(-100%);
+  background: black;
+  text-align: center;
+  color: #fff;
+  padding: 0.4rem 0.2rem;
+  font-size: 1.2rem;
+  min-width: 8rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.scope-annotate a:hover {
+  background: #0b3955;
+}
+
+.scope-annotate a:hover svg .ico-stroke {
+  fill: #99fcff;
+}
+
+.scope-annotate a:hover svg .ico-fill {
+  fill: #0b3955;
+}
+
+.scope-annotate svg .ico-fill {
+  fill: #004E51;
+}
+
+.scope-annotate svg .ico-stroke {
+  fill: #00F5FF;
+}
+
+[tooltip-position='right']::before {
+  left: 100%;
+  top: 50%;
+  margin-left: 0.1rem;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+[tooltip-position='right']::after {
+  left: 100%;
+  top: 50%;
+  margin-left: 0.8rem;
+  -webkit-transform: translateX(0%) translateY(-50%);
+          transform: translateX(0%) translateY(-50%);
+}
+
+[tooltip]:hover::after, [tooltip]:hover::before {
+  opacity: 1;
+}
+
+html {
+  overflow: hidden;
+}
+
+.scope__sidebar {
+  min-width: 32rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  right: 0;
+  position: relative;
+}
+
+.scope__sidebar.scope__sidebar__off {
+  position: absolute;
+  right: -32rem;
+}
+
+.scope-chat {
+  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  width: 0;
+  right: -32rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.scope-chat.scope-chat__on {
+  width: 32rem;
+  right: 0;
+}
+
+.scope-chat .scope-chat__body {
+  padding: 2rem;
+  -ms-flex-preferred-size: calc(100vh - 20rem);
+      flex-basis: calc(100vh - 20rem);
+  -ms-flex-preferred-size: fill;
+      flex-basis: fill;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.scope-chat .scope-chat__body .scope-chat__body--date {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1rem;
+  background: #131313;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message {
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0 2rem 0;
+  display: inline-block;
+  position: relative;
+  max-width: 90%;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message .scope-chat__body--time {
+  font-size: 1rem;
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.4rem;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message p {
+  margin: 0;
+  padding-right: 3.2rem;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message::after {
+  border-color: transparent #fff transparent transparent;
+  content: " ";
+  position: absolute;
+  bottom: 0.2rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1rem 1.5rem 1rem 0;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message.scope-chat__message-proctee {
+  background: #fff;
+  background: white;
+  color: #131313;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message.scope-chat__message-proctee::after {
+  border-color: transparent #fff transparent transparent;
+  right: -0.8rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.scope-chat .scope-chat__body .scope-chat__message.scope-chat__message-proctor {
+  background: #007E84;
+  color: white;
+}
+
+.scope-chat .scope-chat__body .scope-chat__message.scope-chat__message-proctor::after {
+  border-color: transparent #007E84 transparent transparent;
+  left: -0.8rem;
+}
+
+.scope-chat .scope-chat__footer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: flex-end;
+}
+
+.scope-chat .scope-chat__footer .scope-chat__footer__delete-contact {
+  display: inline-block;
+  text-align: center;
+  color: #D40404;
+}
+
+.scope-chat .scope-chat__footer .scope-chat__footer__delete-contact a {
+  color: inherit;
+}
+
+.scope-chat .scope-chat__footer .scope-chat__footer__add-proctor {
+  width: 90%;
+  margin: 2rem 0;
+}
+
+.scope-chat .scope-chat__footer .scope-chat__footer__send-message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scope-chat .scope-chat__footer .scope-chat__footer__send-message input {
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+}
+
+.scope-chat .scope-chat__footer .scope-chat__footer__send-message img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.6rem;
+}
+
+.scope-contacts {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#001C2E), to(#082B41));
+  background: linear-gradient(180deg, #001C2E 0%, #082B41 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.scope-contacts.scope-contacts__off {
+  width: 0px;
+}
+
+.scope-contacts.scope-contacts__off > * {
+  display: none;
+}
+
+.scope-contacts section .scope-contacts__filter {
+  padding: 0 2rem 2rem 2rem;
+  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
+}
+
+.scope-contacts section .scope-contacts__filter input {
+  color: #C4C4C4;
+  border-radius: 0.5rem;
+  padding: 0.8rem 3.2rem;
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  background: #fff url(/img/search-solid.svg) no-repeat 1.2rem center;
+}
+
+.scope-contacts section .scope-contacts__filter input::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+
+.scope-contacts section .scope-contacts__filter input:-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.scope-contacts section .scope-contacts__filter input::-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.scope-contacts section .scope-contacts__filter input::placeholder {
+  color: #C4C4C4;
+}
+
+.scope-contacts section .scope-contacts__card {
+  padding: 1rem;
+  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
+  border-bottom: 0.1rem solid #015482;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scope-contacts section .scope-contacts__card:last-child {
+  border-bottom: 0;
+}
+
+.scope-contacts section .scope-contacts__card:hover {
+  background: linear-gradient(92.4deg, #014968 0%, #014968 100%);
+}
+
+.scope-contacts section .scope-contacts__card .scope-contacts__card__name {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-left: 1.2rem;
+}
+
+.scope-contacts section .scope-contacts__card .scope-contacts__card__name h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.scope-contacts footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 2rem;
+}
+
+.scope-contacts .scope-contacts-icon__back {
+  visibility: hidden;
+}
+
+.scope-contacts__avatar {
+  position: relative;
+  width: 6rem;
+}
+
+.scope-contacts__avatar img {
+  border-radius: 100%;
+  border: 0.2rem solid #1288CA;
+}
+
+.scope-contacts__avatar .online-status {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #08B004;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.chat-contacts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem;
+  font-size: 2rem;
+  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
+}
+
+.chat-contacts__header h2 {
+  color: #fff;
+  margin: 0;
+  font-size: inherit;
+}
+
+.chat-contacts__header i {
+  font-size: inherit;
+  color: #fff;
+  width: 3.4rem;
+  height: 3.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat-contacts__header i:hover {
+  cursor: pointer;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10rem;
+}
+
+.scope-chat__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scope-chat__name .scope-contacts__avatar {
+  width: 2.8rem;
+  margin-right: 0.8rem;
+}
+
+.scope-chat__name h2 {
+  font-size: 1.6rem;
+}
+
+.scope-chat__name .online-status {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.available-feeds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 11rem;
+  background: rgba(35, 35, 35, 0.2);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.available-feeds__feed {
+  width: 21rem;
+  background: #131313 url(/img/avatar-dark.svg) no-repeat bottom center;
+  padding: 2rem;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.available-feeds__feed:last-child {
+  margin-right: 0;
+}
+
+.available-feeds__feed h3, .available-feeds__feed p {
+  margin: 0;
+}
+
+.available-feeds__feed h3 {
+  color: #01ccd3;
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.available-feeds__feed p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.available-feeds__feed img, .available-feeds__feed svg, .available-feeds__feed button, .available-feeds__feed .available-feeds__feed__icon {
+  display: none;
+}
+
+.available-feeds__feed.feed-inactive:hover p {
+  display: none;
+}
+
+.available-feeds__feed.feed-inactive:hover h3 {
+  display: none;
+}
+
+.available-feeds__feed.feed-inactive:hover > button {
+  display: block;
+}
+
+.available-feeds__feed.feed-active {
+  position: relative;
+}
+
+.available-feeds__feed.feed-active img, .available-feeds__feed.feed-active h3 {
+  display: block;
+}
+
+.available-feeds__feed.feed-active img {
+  max-height: 11rem;
+}
+
+.available-feeds__feed.feed-active img, .available-feeds__feed.feed-active video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.available-feeds__feed.feed-active .available-feeds__feed__icon {
+  color: #01ccd3;
+  position: absolute;
+  z-index: 9;
+  font-size: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.available-feeds__feed.feed-active .available-feeds__feed__icon.available-feeds__feed__icon-mic, .available-feeds__feed.feed-active .available-feeds__feed__icon.available-feeds__feed__full-screen {
+  top: 0.4rem;
+  left: 0.4rem;
+}
+
+.available-feeds__feed.feed-active .available-feeds__feed__icon.available-feeds__feed__icon-ellipsis {
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+.available-feeds__feed.feed-active .available-feeds__feed__icon:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10rem;
+}
+
+.available-feeds__feed.feed-active h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  background: #131313;
+  padding: 0.3rem 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.available-feeds__feed.feed-active h3::before {
+  content: " ";
+  position: absolute;
+  background: red;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+}
+
+.available-feeds__feed.feed-active .feed-para-waiting-room {
+  display: none;
+}
+
+.available-feeds__proctor {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  right: -100rem;
+}
+
+.available-feeds__proctor.show {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  right: 0;
+}
+
+.available-feeds__proctee {
+  position: relative;
+}
+
+.available-feeds__data h3:before {
+  display: none;
+}
+
+.scope-gallery .alert-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scope-gallery .scope-gallery__content {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr 80px;
+      grid-template-columns: 80px 1fr 80px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.scope-gallery .scope-gallery__content i {
+  font-size: 3rem;
+  height: 2em;
+  width: 2em;
+}
+
+.scope-gallery .scope-gallery__content i:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.scope-gallery .scope-gallery__content img {
+  max-width: 800px;
+}
+
+.scope-gallery .scope-gallery__content div {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scope-gallery .scope-gallery__thumbnails {
+  grid-column: span 3;
+  height: 100%;
+}
+
+.scope-gallery .scope-gallery__thumbnails img {
+  border: 1px solid #01ccd3;
+  margin-right: 2rem;
+}
+
+.scope-main__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scope-main__menu button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#001C2E), to(#082B41));
+  background: linear-gradient(180deg, #001C2E 0%, #082B41 100%);
+  border: none;
+  color: #fff;
+  padding: 1.2rem;
+  min-width: 10rem;
+  font-weight: 400;
+}
+
+.scope-main__menu button:hover {
+  background: #0b3955;
+}
+
+.scope-main__menu button i {
+  color: #0cf7ff;
+  font-size: 1.8rem;
+  margin: 0.6rem 0;
+}
+
+.scope-main__menu button i.live {
+  color: #D40404;
+}
+
+.scope-main__menu button i.fa-circle {
+  color: red;
+  -webkit-animation: blinkingText 1.6s infinite;
+          animation: blinkingText 1.6s infinite;
+}
+
+.scope-record-timer {
+  position: absolute;
+  top: 0;
+  padding: 0.3rem 0.6rem;
+  display: none;
+  background: rgba(10, 10, 10, 0.349);
+}
+
+.scope-record-timer i {
+  margin-right: 0.3rem;
+}
+
+.scope-record-timer.show {
+  display: block;
+}
+
+.scope-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.scope-main {
+  margin: 2rem 2rem 0 2rem;
+  -ms-grid-rows: 1fr 6.6rem;
+      grid-template-rows: 1fr 6.6rem;
+  grid-gap: 2rem;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+}
+
+.scope-main__feed {
+  display: block;
+  position: relative;
+  background: crimson;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.scope-main__feed img {
+  max-width: 600px;
+}
+
+.scope-main__feed .scope-main__feed-recording {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.scope-main__feed .scope-main__feed-recording span {
+  display: inline-block;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  border: 0.2rem solid #D40404;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.scope-main__feed .scope-main__feed-recording span.scope-main__feed-live-tag {
+  color: #D40404;
+  background: none;
+}
+
+.scope-main__feed .scope-main__feed-recording span.scope-main__feed-tag-on, .scope-main__feed .scope-main__feed-recording span.scope-main__feed-recording-tag-on {
+  opacity: 1;
+  visibility: visible;
+  display: inline-block;
+}
+
+.scope-main__feed .contacts-chat-menu__icon {
+  font-size: 2.6rem;
+  position: fixed;
+  bottom: -1rem;
+  right: -1rem;
+  width: 0;
+  height: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.scope-main__feed .contacts-chat-menu__icon:hover {
+  cursor: pointer;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10rem;
+}
+
+.scope-main__feed .contacts-chat-menu__icon.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 1rem;
+  right: 1rem;
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+  visibility: visible;
+  opacity: 1;
+}
+
+.scope-main__data-feeds {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.scope-main__data-feeds .scope-main__data-feed {
+  margin-bottom: 2rem;
+  width: 33rem;
+  position: relative;
+  z-index: 99;
+}
+
+.scope-main__data-feeds .scope-main__data-feed:hover {
+  cursor: pointer;
+}
+
+.scope-main__data-feeds .scope-main__data-feed img {
+  height: 20rem;
+  width: 100%;
+}
+
+.scope-main__data-feeds .scope-main__data-feed i {
+  position: absolute;
+  top: 0.6rem;
+  color: #01ccd3;
+  font-size: 2.5rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scope-main__data-feeds .scope-main__data-feed i.scope-main__data-feed__full-screen {
+  left: 0.6rem;
+}
+
+.scope-main__data-feeds .scope-main__data-feed i.scope-main__data-feed__ellipsis {
+  right: 0.6rem;
+}
+
+.scope-main__data-feeds .scope-main__data-feed i:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10rem;
+  background-color: rgba(6, 183, 253, 0.3);
+}
+
+.scope-main__data-feeds .scope-main__data-feed p {
+  color: #fff;
+}
+
+.scope-main__data-feeds .scope-main__data-feed h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  background: #131313;
+  padding: 0.3rem 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.scope-main__data-feeds .scope-main__data-feed h3::before {
+  content: " ";
+  position: absolute;
+  background: red;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+}
+
+.scope-main__data-feeds .scope-main__data-feed h3:before {
+  display: none;
+}
+
+.feeds-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  position: relative;
+}
+
+.feeds-wrapper.chat-off .available-feeds {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

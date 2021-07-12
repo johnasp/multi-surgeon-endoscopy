@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the GALLERY of the application.
+// -----------------------------------------------------------------------------
+
+.scope-gallery {
+   .alert-body {
+      display: flex;
+      flex-direction: column;
+   }
+   .scope-gallery__content {
+      position: relative;
+      display: grid;
+      grid-template-columns: 80px 1fr 80px;
+      flex-basis: 100%;
+      i {
+         font-size: 3rem;
+         height: 2em;
+         width: 2em;
+         @extend .flex-center;
+         &:hover {
+            @include circleBgHover(0.2);
+            cursor: pointer;
+         }
+      }
+      img {
+         max-width: 800px;
+      }
+      div {
+         height: 100%;
+         align-items: center;
+         justify-content: center;
+         display: flex;
+      }
+   }
+   .scope-gallery__thumbnails {
+      grid-column: span 3;
+      height: 100%;
+      img {
+         border: 1px solid $col-primary;
+         margin-right: $gutter;
+      }
+   }   
+}
+
