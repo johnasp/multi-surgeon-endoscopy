@@ -92,7 +92,7 @@
         </nav>
 
         <main class="scope-main">
-            <div class="feeds-wrapper chat-off">
+            <div class="feeds-wrapper">
                 <section class="scope-main__feed">
                     <div class="scope-main__feed-recording">
                         <span class="scope-main__feed-live-tag">live</span>
@@ -255,12 +255,13 @@
             </nav>
         </main>
 
-        <aside class="scope__sidebar scope-sidebar__floating-on">
-            <div class="scope-contacts scope-contacts__proctors">
-                <header class="chat-contacts__header">
-                    <i class="fas"></i>
+        <aside class="scope-sidebar">
+
+            <section class="scope-sidebar__contacts">
+                <header>
+                    <span>&nbsp</span>  
                     <h2>Contacts</h2>
-                    <i class="fas fa-times scope__sidebar__close"></i>
+                    <i class="fas fa-times scope-sidebar__close"></i>
                 </header>
                 <section>
                     <div class="scope-contacts__filter">
@@ -268,7 +269,7 @@
                     </div>
                     
                     <div class="scope-contacts__card">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/fareed.png" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -283,7 +284,7 @@
                     </div>
 
                     <div class="scope-contacts__card">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/paul.jpg" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -291,14 +292,14 @@
                             <h3>Paul Fothergill</h3>
                         </div>
                         <div class="scope-contacts__card__action">
-                            <button class="btn btn-secondary btn-square">
+                            <button class="btn btn-primary btn-square">
                                 <i class="fas fa-sms"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="scope-contacts__card scope-contacts__card__sajad">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/sajad.jpg" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -306,14 +307,14 @@
                             <h3>Sajad Rana</h3>
                         </div>
                         <div class="scope-contacts__quick-add__sajad">
-                            <button class="btn btn-secondary btn-square">
+                            <button class="btn btn-primary btn-square">
                                 <i class="fas fa-user-plus"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="scope-contacts__card">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/blake.jpg" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -321,14 +322,14 @@
                             <h3>Blake Edwards</h3>
                         </div>
                         <div class="scope-contacts__card__action">
-                            <button class="btn btn-secondary btn-square">
+                            <button class="btn btn-primary btn-square">
                                 <i class="fas fa-sms"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="scope-contacts__card">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/ashley.jpg" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -336,14 +337,14 @@
                             <h3>Ashley Begley</h3>
                         </div>
                         <div class="scope-contacts__card__action">
-                            <button class="btn btn-secondary btn-square">
+                            <button class="btn btn-primary btn-square">
                                 <i class="fas fa-sms"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="scope-contacts__card">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/john.jpg" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -351,14 +352,14 @@
                             <h3>John McMurray</h3>
                         </div>
                         <div class="scope-contacts__card__action">
-                            <button class="btn btn-secondary btn-square">
+                            <button class="btn btn-primary btn-square">
                                 <i class="fas fa-sms"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="scope-contacts__card">
-                        <div class="scope-contacts__avatar">
+                        <div class="scope-sidebar__avatar">
                             <img src="img/daniel.jpg" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
@@ -366,7 +367,7 @@
                             <h3>Daniel Smith</h3>
                         </div>
                         <div class="scope-contacts__card__action">
-                            <button class="btn btn-secondary btn-square">
+                            <button class="btn btn-primary btn-square">
                                 <i class="fas fa-user-plus"></i>
                             </button>
                         </div>
@@ -374,23 +375,23 @@
                 </section>
                 <footer>
                     <button class="btn btn-primary">
-                        <span>Add new contact</span>
+                        <span>Create New Contact</span>
                         <i class="fas fa-user-md"></i>
                     </button>
                 </footer>
-            </div>
+            </section>
 
-            <div class="scope-chat">
-                <header class="chat-contacts__header">
+            <section class="scope-sidebar__chat">
+                <header>
                     <i class="fas fa-chevron-left scope-chat__icon-back"></i>
-                    <div class="scope-chat__name">
-                        <div class="scope-contacts__avatar scope-contacts__avatar__chat">
+                    <div class="scope-sidebar__header-name">
+                        <div class="scope-sidebar__avatar scope-contacts__avatar__chat">
                             <img src="img/fareed.png" alt="Pic of user">
                             <span class="online-status"></span>
                         </div>
                         <h2> Sajad Ranaa</h2>
                     </div>
-                    <i class="fas fa-times chat_sidebar__close"></i>
+                    <i class="fas fa-times scope-sidebar__close"></i>
                 </header>
                 <section class="scope-chat__body">    
                     <time class="scope-chat__body--date">June 10</time>
@@ -458,14 +459,14 @@
                     </span>
                     <button class="btn btn-primary scope-chat__footer__add-proctor">
                         <span>Add to Scope</span>
-                        <i class="fas fa-user-md"></i>
+                        <i class="fas fa-video-plus"></i>
                     </button>
                     <div class="scope-chat__footer__send-message">
                         <input type="text" name="" placeholder="Type your message">
                         <img src="img/icon-send.svg" alt="Click to send" width="25" height="25">
                     </div>
                 </footer>
-            </div>
+            </section>
         </aside>
 
     </div> <!-- scope-wrapper -->

@@ -56,7 +56,10 @@
       }
    }
    .contacts-chat-menu__icon {
-      font-size: 2.6rem;
+      background-color: $sidebar-bg-col;
+      border-radius: 100%;
+      font-size: 3rem;
+      padding: 6rem;
       position: fixed;
       bottom: -1rem;
       right: -1rem;
@@ -66,13 +69,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.2s;
       visibility: hidden;
       opacity: 0;
       display: none;
       &:hover {
          cursor: pointer;
-         @include circleBgHover (0.5);
+         @include circleBgHover (0.7);
       }
       &.show {
          display: flex;
@@ -88,12 +90,8 @@
 }
 .scope-main__data-feeds {
    position: absolute;
-   top: 2rem;
-   right: 2rem;
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   justify-content: center;
+   top: 3rem;
+   right: 3rem;
    height: 100%;
    .scope-main__data-feed {
       margin-bottom: 2rem;
