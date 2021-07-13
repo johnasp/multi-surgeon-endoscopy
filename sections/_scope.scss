@@ -90,16 +90,21 @@
    position: absolute;
    top: 2rem;
    right: 2rem;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
    .scope-main__data-feed {
       margin-bottom: 2rem;
-      width: 33rem;
+      width: 30rem;
       position: relative;
       z-index: 99;
       &:hover {
          cursor: pointer;
       }
       img {
-         height: 20rem;
+         height: 18rem;
          width: 100%;
       }
       i {

@@ -1,16 +1,28 @@
 html {
    overflow: hidden;
 }
-$chat-width: 32rem;
+$chat-width: 34rem;
 .scope__sidebar {
    min-width: $chat-width;
    transition: all 0.3s;
    right: 0;
    position: relative;
+   display: flex;
+   height: 100%;
    &.scope__sidebar__off {
       position: absolute;
       right: -$chat-width;
    }
+   > div {
+      margin: 40px 40px 40px 0;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px 5px #1c1a1a;
+   }
+}
+.scope-sidebar__floating-on {
+   position: absolute;
+   z-index: 99;
+
 }
 .scope-chat {
    background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
@@ -132,9 +144,9 @@ $chat-width: 32rem;
    }
 }
 .scope-contacts {
-	height: 100%;
-   background: $button-bg; 
+   background:  #106392;
    display: flex;
+   flex: 1;
    flex-flow: column;
    transition: all 0.3s;
    &.scope-contacts__off {
@@ -146,7 +158,6 @@ $chat-width: 32rem;
    section {
       .scope-contacts__filter {
          padding: 0 2rem 2rem 2rem;
-         background: $contact-bg;
          input {
             color: $placeholder;
             border-radius: 0.5rem;
@@ -162,11 +173,11 @@ $chat-width: 32rem;
       }
       .scope-contacts__card {
          padding: 1rem;
-         background: $contact-bg;
          border-bottom: 0.1rem solid #015482;
          display: flex;
          justify-content: space-between;
          align-items: center;
+         background: linear-gradient(90deg, rgba(16,99,146,1) 0%, rgba(16,92,135,1) 100%);
          &:last-child {
             border-bottom: 0;
          }
@@ -218,7 +229,7 @@ $chat-width: 32rem;
    align-items: center;
    padding: 1.2rem;
    font-size: 2rem;
-   background: $contact-bg;
+
    h2 {
       color: #fff;
       margin: 0;

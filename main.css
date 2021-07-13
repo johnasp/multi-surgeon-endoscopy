@@ -1049,16 +1049,32 @@ html {
 }
 
 .scope__sidebar {
-  min-width: 32rem;
+  min-width: 34rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   right: 0;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
 }
 
 .scope__sidebar.scope__sidebar__off {
   position: absolute;
-  right: -32rem;
+  right: -34rem;
+}
+
+.scope__sidebar > div {
+  margin: 40px 40px 40px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px #1c1a1a;
+          box-shadow: 5px 5px 15px 5px #1c1a1a;
+}
+
+.scope-sidebar__floating-on {
+  position: absolute;
+  z-index: 99;
 }
 
 .scope-chat {
@@ -1077,13 +1093,13 @@ html {
   position: absolute;
   top: 0;
   width: 0;
-  right: -32rem;
+  right: -34rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .scope-chat.scope-chat__on {
-  width: 32rem;
+  width: 34rem;
   right: 0;
 }
 
@@ -1237,12 +1253,13 @@ html {
 }
 
 .scope-contacts {
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#001C2E), to(#082B41));
-  background: linear-gradient(180deg, #001C2E 0%, #082B41 100%);
+  background: #106392;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -1261,7 +1278,6 @@ html {
 
 .scope-contacts section .scope-contacts__filter {
   padding: 0 2rem 2rem 2rem;
-  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
 }
 
 .scope-contacts section .scope-contacts__filter input {
@@ -1292,7 +1308,6 @@ html {
 
 .scope-contacts section .scope-contacts__card {
   padding: 1rem;
-  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
   border-bottom: 0.1rem solid #015482;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1303,6 +1318,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#106392), to(#105c87));
+  background: linear-gradient(90deg, #106392 0%, #105c87 100%);
 }
 
 .scope-contacts section .scope-contacts__card:last-child {
@@ -1374,7 +1391,6 @@ html {
           align-items: center;
   padding: 1.2rem;
   font-size: 2rem;
-  background: linear-gradient(92.4deg, #00364E 0%, #014968 100%);
 }
 
 .chat-contacts__header h2 {
@@ -1830,11 +1846,25 @@ html {
   position: absolute;
   top: 2rem;
   right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .scope-main__data-feeds .scope-main__data-feed {
   margin-bottom: 2rem;
-  width: 33rem;
+  width: 30rem;
   position: relative;
   z-index: 99;
 }
@@ -1844,7 +1874,7 @@ html {
 }
 
 .scope-main__data-feeds .scope-main__data-feed img {
-  height: 20rem;
+  height: 18rem;
   width: 100%;
 }
 
