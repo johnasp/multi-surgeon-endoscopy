@@ -224,10 +224,6 @@ popupDataFeedMenuClose.addEventListener('click', () => {
    popupDataFeedMenu.classList.toggle('show');
 })
 
-
-
-
-
 ///////////////////////////////////////////////////////////
 // FEED AUDIO MUTE TOGGLING 
 ///////////////////////////////////////////////////////////
@@ -265,6 +261,7 @@ editColourMenuItem.addEventListener('click', () => {
 closeColourAlertIcon.addEventListener('click', () => {
    alertAnnotationColour.classList.toggle('show');
 })
+
 ///////////////////////////////////////////////////////////
 // EDIT FEED NAME
 ///////////////////////////////////////////////////////////
@@ -302,32 +299,32 @@ feedsBtnAddQuick.addEventListener('click', e => {
 
 
 ///////////////////////////////////////////////////////////
-// CHAT AND CONTACTS MENU - ON & OFF
+//  SIDEBAR - ON & OFF
 ///////////////////////////////////////////////////////////
-const scopeSidebar = document.querySelector('.scope__sidebar');
-const scopeSidebarCloseIcon = document.querySelector('.scope__sidebar__close');
+const scopeSidebar = document.querySelector('.scope-sidebar');
 const contactsChatButton = document.querySelector('.contacts-chat-menu__icon');
-const feedsWrapper = document.querySelector('.feeds-wrapper');
+const scopeSidebarCloseIcons = document.querySelectorAll('.scope-sidebar__close');
 
-// Close the entire sidbar, turn sidebar toggle icon on, dock feeds to scope
-scopeSidebarCloseIcon.addEventListener('click', () => {
-   scopeSidebar.classList.toggle('scope__sidebar__off');
-   contactsChatButton.classList.add('show');
-   feedsWrapper.classList.toggle('chat-off');
-})
-
-// Turn sidebar back on and hide toggle icon
+// Turn sidebar on
 contactsChatButton.addEventListener('click', () => {
-   scopeSidebar.classList.toggle('scope__sidebar__off');
+   scopeSidebar.classList.add('scope-sidebar__on');
    contactsChatButton.classList.remove('show');
-   feedsWrapper.classList.toggle('chat-off');
 })
- 
+
+scopeSidebarCloseIcons.forEach(closeIcon => {
+   closeIcon.addEventListener('click', () => {
+      scopeSidebar.classList.remove('scope-sidebar__on');
+      contactsChatButton.classList.add('show');
+   })
+})
+
+
+
 ///////////////////////////////////////////////////////////
-// CHAT AND CONTACTS MENU - SWITCHING
+// SIDEBAR - SWITCHING CONTACTS TO CHAT
 ///////////////////////////////////////////////////////////
 const proctorSaj = document.querySelector('.scope-contacts__card__sajad');
-const chatMenu = document.querySelector('.scope-chat');
+const chatMenu = document.querySelector('.scope-sidebar__chat');
 const chatIconBack= document.querySelector('.scope-chat__icon-back');
 const closeChatMenu = document.querySelector('.chat_sidebar__close');
 
@@ -343,11 +340,9 @@ chatIconBack.addEventListener('click', () => {
 
 // Close chat menu
 closeChatMenu.addEventListener('click', () => {
-   scopeSidebar.classList.toggle('scope__sidebar__off');
+   scopeSidebar.classList.toggle('scope-sidebar__off');
    contactsChatButton.classList.add('show');
 })
-
-
 
 
 
