@@ -851,6 +851,37 @@ img {
   padding-left: 0;
 }
 
+.scope-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99;
+  height: 0;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.scope-modal.cover-on {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.822);
+}
+
+.alert__gallery {
+  width: 90%;
+  height: 90%;
+  top: -500%;
+}
+
+.alert__gallery.show {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .scope-popup {
   background: -webkit-gradient(linear, left top, left bottom, from(#00F5FF), to(rgba(0, 245, 255, 0.1)));
   background: linear-gradient(180deg, #00F5FF 0%, rgba(0, 245, 255, 0.1) 100%);
