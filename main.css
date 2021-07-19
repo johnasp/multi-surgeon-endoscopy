@@ -547,12 +547,12 @@ img {
   background: linear-gradient(180deg, #00F5FF 0%, rgba(0, 245, 255, 0.1) 100%);
   -webkit-box-shadow: 0.2rem 0.2rem 0.8rem 0.1rem rgba(0, 0, 0, 0.91);
           box-shadow: 0.2rem 0.2rem 0.8rem 0.1rem rgba(0, 0, 0, 0.91);
+  -webkit-transition: left ease-in-out 0.3s, opacity ease-in-out 0.3s;
+  transition: left ease-in-out 0.3s, opacity ease-in-out 0.3s;
   padding: 0.1rem;
   border-radius: 1.2rem;
   color: #fff;
   opacity: 0;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
   bottom: 1rem;
   z-index: 99;
 }
@@ -692,37 +692,6 @@ img {
   min-width: 36rem;
 }
 
-.scope-modal {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0);
-  z-index: 99;
-  height: 0;
-  -webkit-transition: background 0.4s;
-  transition: background 0.4s;
-}
-
-.scope-modal.cover-on {
-  height: 100%;
-  background: rgba(0, 0, 0, 0.822);
-}
-
-.alert__gallery {
-  width: 90%;
-  height: 90%;
-  top: -500%;
-}
-
-.alert__gallery.show {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,6 +820,25 @@ img {
   padding-left: 0;
 }
 
+.scope-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: -1;
+  height: 0;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.scope-modal.scope-modal__on {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.822);
+  z-index: 1;
+}
+
 .scope-popup {
   background: -webkit-gradient(linear, left top, left bottom, from(#00F5FF), to(rgba(0, 245, 255, 0.1)));
   background: linear-gradient(180deg, #00F5FF 0%, rgba(0, 245, 255, 0.1) 100%);
@@ -926,8 +914,8 @@ img {
   width: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
+  -webkit-transition: left ease-in-out 0.2s, opacity ease-in-out 0.2s;
+  transition: left ease-in-out 0.2s, opacity ease-in-out 0.2s;
 }
 
 .scope-annotate.scope-annotate__on {
@@ -1476,7 +1464,6 @@ html {
 .available-feeds__feed.feed-active .available-feeds__feed__icon {
   color: #01ccd3;
   position: absolute;
-  z-index: 9;
   font-size: 2rem;
   width: 3.2rem;
   height: 3.2rem;
@@ -1561,6 +1548,11 @@ html {
   display: none;
 }
 
+.scope-gallery {
+  position: absolute;
+  z-index: -1;
+}
+
 .scope-gallery .alert-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1595,7 +1587,7 @@ html {
 }
 
 .scope-gallery .scope-gallery__content img {
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .scope-gallery .scope-gallery__content div {
@@ -1614,11 +1606,25 @@ html {
 .scope-gallery .scope-gallery__thumbnails {
   grid-column: span 3;
   height: 100%;
+  height: 100px;
+  overflow-x: scroll;
+  margin-top: 2rem;
 }
 
 .scope-gallery .scope-gallery__thumbnails img {
   border: 1px solid #01ccd3;
+  width: 83px;
+  margin-bottom: 2rem;
   margin-right: 2rem;
+}
+
+.alert__gallery {
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .scope-main__menu {
@@ -1736,8 +1742,8 @@ html {
   font-weight: 900;
   opacity: 0;
   position: relative;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
+  -webkit-transition: left ease-in-out 0.5s, opacity ease-in-out 0.5s;
+  transition: left ease-in-out 0.5s, opacity ease-in-out 0.5s;
 }
 
 .scope-main__feed .scope-main__feed-recording span.scope-main__feed-live-tag {
@@ -1805,7 +1811,6 @@ html {
   margin-bottom: 2rem;
   width: 33rem;
   position: relative;
-  z-index: 99;
 }
 
 .scope-main__data-feeds .scope-main__data-feed:hover {

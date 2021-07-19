@@ -82,12 +82,12 @@ const iconCloseGallery = document.querySelector('.close-gallery');
 
 btnGallery.addEventListener('click', () => {
    alertGallery.classList.toggle('show');
-   galleryCover.classList.toggle('cover-on');
+   galleryCover.classList.toggle('scope-modal__on');
 });
 
 iconCloseGallery.addEventListener('click', () => {
    alertGallery.classList.toggle('show');
-   galleryCover.classList.toggle('cover-on');
+   galleryCover.classList.toggle('scope-modal__on');
 })
 
 ///////////////////////////////////////////////////////////

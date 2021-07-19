@@ -12,7 +12,7 @@
 }
 // MIXINS
 @mixin animate($time) {
-   transition: all ease-in-out $time;
+   transition: left ease-in-out $time, opacity ease-in-out $time;
 }
 @mixin gradientOutline() {
    background: linear-gradient(180deg, #00F5FF 0%, rgba(0, 245, 255, 0.1) 100%);

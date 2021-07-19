@@ -8,21 +8,13 @@
    left: 0;
    right: 0;
    background: rgba(0, 0, 0, 0);
-   z-index: 99;
+   z-index: -1;
    height: 0;
-   transition: background 0.4s;
-   &.cover-on {
+   transition: background 0.3s;
+   
+   &.scope-modal__on {
       height: 100%;
       background: rgba(0, 0, 0, 0.822);
-   }
-}
-.alert__gallery {
-   width: 90%;
-   height: 90%;
-   top: -500%;
-   &.show {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      z-index: 1;
    }
 }
