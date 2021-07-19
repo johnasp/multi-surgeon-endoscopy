@@ -5,11 +5,11 @@
    position: absolute;
    @include gradientOutline();
    @include boxShadow();
+   @include animate(0.3s);
    padding: 0.1rem;
    border-radius: $corners;
    color: #fff;
    opacity: 0;
-   @include animate(0.5s);
    bottom: $gutter/2;
    z-index: 99;
    &.show {
@@ -59,7 +59,6 @@
       left: $gutter/2;
     }
 }
-
 .alert__annotation-colour {
    .alert__annotation-colour__palette {
       font-size: 1rem;
@@ -107,28 +106,4 @@
 .alert__edit-feed-name {
    min-width: 36rem;
 }
-.scope-modal {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background: rgba(0, 0, 0, 0);
-   z-index: 99;
-   height: 0;
-   transition: background 0.4s;
-   &.cover-on {
-      height: 100%;
-      background: rgba(0, 0, 0, 0.822);
-   }
-}
-.alert__gallery {
-   width: 90%;
-   height: 90%;
-   top: -500%;
-   &.show {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-   }
-}
+
