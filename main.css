@@ -1848,14 +1848,13 @@ html {
   cursor: pointer;
 }
 
-.scope-main__data-feeds .scope-main__data-feed img, .scope-main__data-feeds .scope-main__data-feed video {
-  height: 20rem;
+.scope-main__data-feeds .scope-main__data-feed video {
   width: 100%;
 }
 
 .scope-main__data-feeds .scope-main__data-feed i {
   position: absolute;
-  top: 0.6rem;
+  top: 1%;
   color: #01ccd3;
   font-size: 2.5rem;
   width: 4.2rem;
@@ -1872,11 +1871,11 @@ html {
 }
 
 .scope-main__data-feeds .scope-main__data-feed i.scope-main__data-feed__full-screen {
-  left: 0.6rem;
+  left: 1%;
 }
 
 .scope-main__data-feeds .scope-main__data-feed i.scope-main__data-feed__ellipsis {
-  right: 0.6rem;
+  right: 1%;
 }
 
 .scope-main__data-feeds .scope-main__data-feed i:hover {

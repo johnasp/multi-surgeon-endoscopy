@@ -117,12 +117,11 @@
       &:hover {
          cursor: pointer;
       }
-      img, video {
-         height: 20rem;
-         width: 100%;
+      video {
+         width: 100%; 
       }
       i {
-         $data-icon-position: 0.6rem;
+         $data-icon-position: 1%;
          position: absolute;
          top: $data-icon-position;
          color: $col-primary;
