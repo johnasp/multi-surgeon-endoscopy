@@ -96,7 +96,7 @@
                 <section class="scope-main__feed">
                     <div class="scope-main__feed__video">
                         <video autoplay muted loop>
-                            <source src="video/colon2.mp4" type="video/mp4">
+                            <source src="video/op.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="scope-main__feed-recording">
@@ -141,6 +141,10 @@
                                 <header>
                                     <i class="fas fa-times scope-popup__close-icon"></i>
                                 </header>
+                                <p class="scope-popup__edit-cam">
+                                    <i class="fas fa-video"></i>
+                                    <span>Change cam settings</span>
+                                </p>
                                 <p class="scope-popup__edit-name">
                                     <i class="fas fa-edit"></i>
                                     <span>Edit feed name</span>
@@ -188,35 +192,7 @@
                         </div>
                    </div>
 
-                   <div class="available-feeds__feed available-feeds__data feed-active">
-                        <i class="fas fa-expand-wide available-feeds__feed__icon available-feeds__feed__full-screen"></i>
-                        <i class="fas fa-ellipsis-v available-feeds__feed__icon available-feeds__feed__icon-ellipsis"></i>
-                        <img src="img/telem.jpeg" style="min-width: 210px;">
-                        <h3>Telemetry</h3>
-                        <div class="scope-popup">
-                            <div class="scope-popup__body">
-                                <header>
-                                    <i class="fas fa-times scope-popup__close-icon"></i>
-                                </header>
-                                <p class="scope-popup__data-menu__add-to-master">
-                                    <i class="fad fa-plus-circle"></i>
-                                    <span>Add to master feed</span>
-                                </p>
-                                <p class="scope-popup__data-menu__make-master">
-                                    <i class="fas fas fa-expand-wide"></i>
-                                    <span>Make master feed</span>
-                                </p>
-                                <p class="scope-popup__data-menu__edit-name">
-                                    <i class="fas fa-edit"></i>
-                                    <span>Edit feed name</span>
-                                </p>
-                                <p class="scope-popup__data-menu__remove-feed">
-                                    <i class="fas fa-trash"></i>
-                                    <span>Remove feed</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+
 
                 </section>
             </div>
@@ -479,7 +455,19 @@
 
     </div> <!-- scope-wrapper -->
 
-    <div class="alert alert__dialog alert-broadcast ">
+    <div class="alert alert__dialog alert-cam-settings">
+        <div class="alert-body">
+            <i class="fas fa-times close-alert"></i>
+            <h2>Start your broadcast</h2>
+            <p>http://chip.surgease.com/fdsfhous345er</p>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-alert-copy">Copy link</button>
+                <button class="btn btn-success-solid btn-alert-live">Go live</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert__dialog alert-broadcast">
         <div class="alert-body">
             <i class="fas fa-times close-alert"></i>
             <h2>Start your broadcast</h2>
