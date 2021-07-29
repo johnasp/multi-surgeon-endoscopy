@@ -1470,6 +1470,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
 }
 
 .available-feeds__feed.feed-active .available-feeds__feed__icon.available-feeds__feed__icon-mic, .available-feeds__feed.feed-active .available-feeds__feed__icon.available-feeds__feed__full-screen {
@@ -1686,6 +1687,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background: #1a6b81;
 }
 
 .scope-main {

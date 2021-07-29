@@ -67,6 +67,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
+         z-index: 1;
          &.available-feeds__feed__icon-mic, &.available-feeds__feed__full-screen {
             top: 0.4rem;
             left: 0.4rem;
